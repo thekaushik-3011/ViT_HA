@@ -1,0 +1,57 @@
+# Python Ignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environments
+venv/
+.env/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Deep Learning weights / datasets
+*.pth
+*.pt
+*.h5
+*.onnx
+# ExeImg_Dataset/   # Uncomment this if you want to prevent pushing the huge dataset to git!
+
+# Hardware / Vivado Generates (Assuming you might run vivado in this folder)
+*.jou
+*.log
+*.str
+*.pb
+*.wdf
+*.dir/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

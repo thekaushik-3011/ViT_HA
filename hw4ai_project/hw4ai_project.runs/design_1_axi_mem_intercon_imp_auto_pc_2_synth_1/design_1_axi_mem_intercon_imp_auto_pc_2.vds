@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Mar 30 20:30:52 2026
+# Process ID         : 22050
+# Current directory  : /home/salla-kaushik/hw4ai_project/hw4ai_project.runs/design_1_axi_mem_intercon_imp_auto_pc_2_synth_1
+# Command line       : vivado -log design_1_axi_mem_intercon_imp_auto_pc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_mem_intercon_imp_auto_pc_2.tcl
+# Log file           : /home/salla-kaushik/hw4ai_project/hw4ai_project.runs/design_1_axi_mem_intercon_imp_auto_pc_2_synth_1/design_1_axi_mem_intercon_imp_auto_pc_2.vds
+# Journal file       : /home/salla-kaushik/hw4ai_project/hw4ai_project.runs/design_1_axi_mem_intercon_imp_auto_pc_2_synth_1/vivado.jou
+# Running On         : aetherion
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 3400.042 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16526 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20821 MB
+# Available Virtual  : 6807 MB
+#-----------------------------------------------------------
+source design_1_axi_mem_intercon_imp_auto_pc_2.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_mem_intercon_imp_auto_pc_2, cache-ID = 9ceba992c5501d6b.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 20:30:58 2026...
