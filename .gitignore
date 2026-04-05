@@ -37,7 +37,7 @@ venv.bak/
 *.pt
 *.h5
 *.onnx
-# ExeImg_Dataset/   # Uncomment this if you want to prevent pushing the huge dataset to git!
+ExeImg_Dataset/
 
 # Hardware / Vivado Generates (Assuming you might run vivado in this folder)
 *.jou
