@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Apr  6 19:58:58 2026
+# Process ID         : 46230
+# Current directory  : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_axi_gpio_0_0_synth_1
+# Command line       : vivado -log design_1_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_0.tcl
+# Log file           : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0.vds
+# Journal file       : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_axi_gpio_0_0_synth_1/vivado.jou
+# Running On         : aetherion
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 2802.493 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16526 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20821 MB
+# Available Virtual  : 11442 MB
+#-----------------------------------------------------------
+source design_1_axi_gpio_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 1523.723 ; gain = 64.059 ; free physical = 3810 ; free virtual = 9818
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_axi_gpio_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_0, cache-ID = d7760a85c4186276.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 19:59:09 2026...

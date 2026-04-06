@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Apr  6 19:58:59 2026
+# Process ID         : 46345
+# Current directory  : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1
+# Command line       : vivado -log design_1_vit_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_vit_top_0_0.tcl
+# Log file           : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1/design_1_vit_top_0_0.vds
+# Journal file       : /home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1/vivado.jou
+# Running On         : aetherion
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 921.344 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16526 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20821 MB
+# Available Virtual  : 11339 MB
+#-----------------------------------------------------------
+source design_1_vit_top_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 1509.434 ; gain = 84.059 ; free physical = 3781 ; free virtual = 9795
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_vit_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46793
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2125.879 ; gain = 440.711 ; free physical = 1915 ; free virtual = 7964
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_vit_top_0_0' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ip/design_1_vit_top_0_0/synth/design_1_vit_top_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'vit_top' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'patch_embed' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/patch_embed.sv:9]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/patch_embed.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'systolic_gemm' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_gemm' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'patch_embed' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/patch_embed.sv:9]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'layernorm' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'systolic_gemm__parameterized0' [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_gemm__parameterized0' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'vit_top' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vit_top_0_0' (0#1) [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ip/design_1_vit_top_0_0/synth/design_1_vit_top_0_0.sv:53]
+WARNING: [Synth 8-7137] Register y_addr_reg in module systolic_gemm has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:82]
+WARNING: [Synth 8-7137] Register y_data_reg in module systolic_gemm has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:85]
+WARNING: [Synth 8-3848] Net patch_out in module/entity patch_embed does not have driver. [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/patch_embed.sv:22]
+WARNING: [Synth 8-3848] Net valid_out in module/entity patch_embed does not have driver. [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/patch_embed.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:83]
+WARNING: [Synth 8-6014] Unused sequential element sq_reg was removed.  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:84]
+WARNING: [Synth 8-6014] Unused sequential element sum_sq_reg was removed.  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:85]
+WARNING: [Synth 8-6014] Unused sequential element variance_reg was removed.  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:90]
+WARNING: [Synth 8-7137] Register mean_reg in module layernorm has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/layernorm.sv:73]
+WARNING: [Synth 8-7137] Register y_addr_reg in module systolic_gemm__parameterized0 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:82]
+WARNING: [Synth 8-7137] Register y_data_reg in module systolic_gemm__parameterized0 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/systolic_gemm.sv:85]
+WARNING: [Synth 8-6014] Unused sequential element block_counter_reg was removed.  [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:73]
+WARNING: [Synth 8-3848] Net s_axis_tready in module/entity vit_top does not have driver. [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:26]
+WARNING: [Synth 8-3848] Net logit_benign in module/entity vit_top does not have driver. [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:30]
+WARNING: [Synth 8-3848] Net logit_malware in module/entity vit_top does not have driver. [/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.gen/sources_1/bd/design_1/ipshared/e336/src/vit_top.sv:31]
+WARNING: [Synth 8-7129] Port tlast_in in module layernorm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[15] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[14] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[13] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[12] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[11] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[10] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[9] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[8] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[7] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[6] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[5] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[4] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[3] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[2] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[1] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port patch_out[0] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid_out in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[15] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[14] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[13] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[12] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[11] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[10] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[9] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[8] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[7] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[6] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[5] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[4] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[3] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[2] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[1] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[0] in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid_in in module patch_embed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tready in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[15] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[14] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[13] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[12] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[11] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[10] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[9] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[8] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[7] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[6] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[5] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[4] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[3] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[2] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[1] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[0] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[15] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[14] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[13] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[12] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[11] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[10] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[9] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[8] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[7] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[6] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[5] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[4] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[3] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[2] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[1] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_malware[0] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_inference in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[31] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[30] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[29] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[28] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[27] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[26] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[25] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[24] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[23] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[22] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[21] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[20] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[19] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[18] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[17] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[16] in module vit_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tlast in module vit_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2228.816 ; gain = 543.648 ; free physical = 3098 ; free virtual = 9149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.660 ; gain = 558.492 ; free physical = 3098 ; free virtual = 9150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.660 ; gain = 558.492 ; free physical = 3098 ; free virtual = 9150
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2243.660 ; gain = 0.000 ; free physical = 3122 ; free virtual = 9174
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.398 ; gain = 0.000 ; free physical = 3107 ; free virtual = 9161
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2359.434 ; gain = 0.000 ; free physical = 3107 ; free virtual = 9161
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2359.434 ; gain = 674.266 ; free physical = 3197 ; free virtual = 9266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2367.402 ; gain = 682.234 ; free physical = 3205 ; free virtual = 9274
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2367.402 ; gain = 682.234 ; free physical = 3205 ; free virtual = 9274
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'systolic_gemm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'layernorm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'systolic_gemm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+               COMPUTE_K |                               01 |                               01
+                 WRITE_Y |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'systolic_gemm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+               ACCUM_VAR |                               01 |                              010
+        COMPUTE_INV_SQRT |                               10 |                              011
+              STREAM_OUT |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'layernorm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+               COMPUTE_K |                              010 |                               01
+                 WRITE_Y |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'systolic_gemm__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2367.402 ; gain = 682.234 ; free physical = 3343 ; free virtual = 9404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 8     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 203   
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	              16x32  Multipliers := 1     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 18    
+	   4 Input    1 Bit        Muxes := 195   
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP tdata_out3, operation Mode is: A*B.
+DSP Report: operator tdata_out3 is absorbed into DSP tdata_out3.
+WARNING: [Synth 8-7129] Port tlast_in in module layernorm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tready in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[15] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[14] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[13] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[12] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[11] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[10] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[9] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[8] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[7] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[6] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[5] in module design_1_vit_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port logit_benign[4] in module design_1_vit_top_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (inst/u_patch_embed/conv_mac_engine/FSM_sequential_state_reg[1]) is unused and will be removed from module design_1_vit_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/u_patch_embed/conv_mac_engine/FSM_sequential_state_reg[0]) is unused and will be removed from module design_1_vit_top_0_0.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module layernorm.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module layernorm.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2367.402 ; gain = 682.234 ; free physical = 3370 ; free virtual = 9433
+---------------------------------------------------------------------------------
+ Sort Area is  tdata_out3_0 : 0 0 : 2126 2126 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|layernorm   | A*B         | 18     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2398.402 ; gain = 713.234 ; free physical = 3781 ; free virtual = 9844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2399.402 ; gain = 714.234 ; free physical = 3781 ; free virtual = 9844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2408.418 ; gain = 723.250 ; free physical = 3769 ; free virtual = 9832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3625 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3625 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3625 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3629 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3629 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3629 ; free virtual = 9707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT1   |     2|
+|3     |LUT2   |    49|
+|4     |LUT3   |     2|
+|5     |LUT4   |    12|
+|6     |LUT5   |     4|
+|7     |LUT6   |     2|
+|8     |FDCE   |    51|
+|9     |FDPE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.230 ; gain = 898.062 ; free physical = 3629 ; free virtual = 9707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2583.230 ; gain = 782.289 ; free physical = 3629 ; free virtual = 9707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2583.238 ; gain = 898.062 ; free physical = 3629 ; free virtual = 9707
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2583.238 ; gain = 0.000 ; free physical = 3621 ; free virtual = 9707
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2639.258 ; gain = 0.000 ; free physical = 3814 ; free virtual = 9892
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e0129af4
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 2639.293 ; gain = 1129.859 ; free physical = 3828 ; free virtual = 9894
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1635.992; main = 1635.992; forked = 230.504
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3331.293; main = 2639.262; forked = 963.887
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.270 ; gain = 0.000 ; free physical = 3828 ; free virtual = 9894
+INFO: [Common 17-1381] The checkpoint '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1/design_1_vit_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_vit_top_0_0, cache-ID = 95bc1c9f324e88e7
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.270 ; gain = 0.000 ; free physical = 3831 ; free virtual = 9897
+INFO: [Common 17-1381] The checkpoint '/home/salla-kaushik/Documents/Semester_8/HW4AI/ViT-Malware-Detector/hw4ai_vit/hw4ai_vit.runs/design_1_vit_top_0_0_synth_1/design_1_vit_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_vit_top_0_0_utilization_synth.rpt -pb design_1_vit_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 19:59:38 2026...
